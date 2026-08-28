@@ -1,8 +1,12 @@
 /**
  * Configuration globale de l'API Client
  */
+const rawApiUrl = (import.meta.env.VITE_API_URL || '/api').replace(/\/+$/, '');
+const rawMediaUrl = (import.meta.env.VITE_MEDIA_URL || rawApiUrl.replace(/\/api$/, '')).replace(/\/+$/, '');
+
 export const API_CONFIG = {
-  BASE_URL: (import.meta.env.VITE_API_URL || '/api').replace(/\/+$/, ''),
+  BASE_URL: rawApiUrl,
+  MEDIA_URL: rawMediaUrl,
 };
 
 export interface ApiResponse<T> {

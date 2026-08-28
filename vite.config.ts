@@ -4,6 +4,7 @@ import tailwindcss from '@tailwindcss/vite'
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: '/fnc/',
   plugins: [react(), tailwindcss()],
   server: {
     // Proxy les requêtes /api et /media vers le backend Django

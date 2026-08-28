@@ -1,5 +1,5 @@
 import type { Athlete } from '../types';
-import { apiFetch } from './apiClient';
+import { apiFetch, API_CONFIG } from './apiClient';
 
 export interface BackendAthlete {
   id: number;
@@ -17,6 +17,7 @@ export function mapBackendAthlete(item: BackendAthlete): Athlete {
     if (!photoUrl.startsWith('/')) {
       photoUrl = `/media/${photoUrl}`;
     }
+    photoUrl = `${API_CONFIG.MEDIA_URL}${photoUrl}`;
   }
 
   return {
