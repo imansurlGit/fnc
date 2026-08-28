@@ -11,6 +11,7 @@ import {
   User
 } from 'lucide-react';
 import type { UserSession } from '../services';
+import { logo } from '../assets';
 
 interface SidebarProps {
   activeTab: string;
@@ -67,7 +68,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
             >
               <div className="w-40 h-auto p-0.5 group-hover:scale-105 transition-transform flex items-center justify-center">
                 <img
-                  src="/logo.png"
+                  src={logo}
                   alt="Logo FNC"
                   className="w-full h-auto object-cover rounded-lg"
                   onError={(e) => {

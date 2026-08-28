@@ -1,10 +1,14 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import {
   Menu,
+  Bell,
   User,
-  ChevronDown
-} from 'lucide-react';
-import type { UserSession } from '../services';
+  CheckCircle2,
+  Sparkles,
+  ShieldCheck,
+  ChevronDown,
+} from "lucide-react";
+import type { UserSession } from "../services";
 
 interface HeaderAdminProps {
   activeTab: string;
@@ -19,12 +23,12 @@ export const HeaderAdmin: React.FC<HeaderAdminProps> = ({
   user,
   onLogout,
 }) => {
+  const [showNotifs, setShowNotifs] = useState(false);
   const [showUserMenu, setShowUserMenu] = useState(false);
 
   return (
     <header className="sticky top-0 z-30 bg-white border-b border-slate-200/80 shadow-2xs py-3.5 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto flex items-center justify-between gap-4">
-        
         {/* Left Section: Mobile Menu & Breadcrumb */}
         <div className="flex items-center gap-3">
           <button
@@ -38,9 +42,8 @@ export const HeaderAdmin: React.FC<HeaderAdminProps> = ({
 
         {/* Right Section: Actions, Notifications & Profile Dropdown */}
         <div className="flex items-center gap-3 sm:gap-4">
-          
           {/* Notifications Dropdown */}
-          {/* <div className="relative">
+          <div className="relative">
             <button
               onClick={() => setShowNotifs(!showNotifs)}
               className="relative p-2 rounded-xl text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition focus:outline-none cursor-pointer"
@@ -74,7 +77,7 @@ export const HeaderAdmin: React.FC<HeaderAdminProps> = ({
                     <ShieldCheck className="w-4 h-4 text-[#bc4209] shrink-0 mt-0.5" />
                     <div>
                       <p className="font-bold text-slate-900">Session Administrateur active</p>
-                      <p className="text-slate-500 text-[11px] mt-0.5">Mock API actif (mode hors-ligne & sauvegarde locale).</p>
+                      <p className="text-slate-500 text-[11px] mt-0.5">Mode connecté & sauvegarde en direct.</p>
                     </div>
                   </div>
                 </div>
@@ -87,7 +90,7 @@ export const HeaderAdmin: React.FC<HeaderAdminProps> = ({
                 </button>
               </div>
             )}
-          </div> */}
+          </div>
 
           {/* User Profile Menu */}
           <div className="relative">
@@ -100,10 +103,10 @@ export const HeaderAdmin: React.FC<HeaderAdminProps> = ({
               </div>
               <div className="text-left hidden sm:block">
                 <p className="text-xs font-extrabold text-slate-900 leading-tight">
-                  {user?.name || 'Administrateur FNC'}
+                  {user?.name || "Administrateur FNC"}
                 </p>
                 <p className="text-[10px] text-slate-500 font-semibold uppercase tracking-wider">
-                  {user?.role || 'ADMIN'}
+                  {user?.role || "ADMIN"}
                 </p>
               </div>
               <ChevronDown className="w-4 h-4 text-slate-400 hidden sm:block" />
@@ -112,8 +115,12 @@ export const HeaderAdmin: React.FC<HeaderAdminProps> = ({
             {showUserMenu && (
               <div className="absolute right-0 mt-2 w-56 bg-white rounded-2xl shadow-xl border border-slate-200 p-2 z-50 animate-fadeIn text-slate-800">
                 <div className="px-3 py-2 border-b border-slate-100">
-                  <p className="text-xs font-bold text-slate-900">{user?.name || 'Administrateur FNC'}</p>
-                  <p className="text-[11px] text-slate-500 truncate">{user?.email || 'admin@fnc.ne'}</p>
+                  <p className="text-xs font-bold text-slate-900">
+                    {user?.name || "Administrateur FNC"}
+                  </p>
+                  <p className="text-[11px] text-slate-500 truncate">
+                    {user?.email || "admin@fnc.ne"}
+                  </p>
                 </div>
 
                 <div className="py-1">
@@ -131,9 +138,7 @@ export const HeaderAdmin: React.FC<HeaderAdminProps> = ({
               </div>
             )}
           </div>
-
         </div>
-
       </div>
     </header>
   );

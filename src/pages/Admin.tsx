@@ -11,6 +11,7 @@ import {
   type UserSession
 } from '../services';
 import type { Article, Sponsor, Athlete, ProgramItem, SponsoringRequest } from '../types';
+import { hero, ecoleMaradi } from '../assets';
 import {
   Newspaper,
   Handshake,
@@ -97,7 +98,7 @@ export const AdminPage: React.FC = () => {
     category: 'CHAMPIONNAT NATIONAL',
     date: '16 Septembre 2026',
     author: 'Bureau Exécutif FNC',
-    image: 'ecole_maradi.png',
+    image: ecoleMaradi,
     summary: '',
     content: '',
   });
@@ -178,7 +179,7 @@ export const AdminPage: React.FC = () => {
       category: 'CHAMPIONNAT NATIONAL',
       date: new Date().toISOString().split('T')[0],
       author: user?.name || 'Bureau Exécutif FNC',
-      image: 'hero.png',
+      image: hero,
       summary: '',
       content: '',
     });

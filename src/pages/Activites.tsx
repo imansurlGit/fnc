@@ -9,6 +9,7 @@ import {
   HeartHandshake, 
   CheckCircle2
 } from 'lucide-react';
+import { hero, ecoleMaradi } from '../assets';
 
 export const ActivitesPage: React.FC = () => {
   return (
@@ -129,7 +130,7 @@ export const ActivitesPage: React.FC = () => {
             <div className="lg:col-span-6">
               <div className="relative rounded-2xl overflow-hidden shadow-lg border border-slate-200 bg-slate-900 group">
                 <img 
-                  src="hero.png" 
+                  src={hero} 
                   alt="Peloton de compétition en pleine course" 
                   className="w-full h-64 sm:h-80 lg:h-[360px] object-cover group-hover:scale-105 transition-transform duration-700"
                 />
@@ -156,7 +157,7 @@ export const ActivitesPage: React.FC = () => {
             <div className="lg:col-span-6 order-2 lg:order-1">
               <div className="relative rounded-2xl overflow-hidden shadow-lg border border-slate-200 bg-slate-900 group">
                 <img 
-                  src="ecole_maradi.png" 
+                  src={ecoleMaradi} 
                   alt="École Nationale de Cyclisme de Maradi" 
                   className="w-full h-64 sm:h-80 lg:h-[360px] object-cover group-hover:scale-105 transition-transform duration-700"
                 />

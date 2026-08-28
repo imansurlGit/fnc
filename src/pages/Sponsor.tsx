@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Handshake, Send, Building, Mail, Phone, User, CheckCircle2, AlertCircle, Loader2, RefreshCw } from 'lucide-react';
 import { SponsorCarousel } from '../components/SponsorCarousel';
 import { sponsorService } from '../services';
+import { velo } from '../assets';
 
 export const SponsorPage = () => {
   const [formData, setFormData] = useState({
@@ -133,7 +134,7 @@ export const SponsorPage = () => {
       <div className="relative bg-[#bc4209] py-24 px-4 overflow-hidden shadow-md">
         <div className="absolute inset-0 opacity-20">
           <img 
-            src="velo.jpg" 
+            src={velo} 
             alt="Sponsoring background" 
             className="w-full h-full object-cover"
           />

@@ -9,6 +9,7 @@ import {
   Compass,
   Users
 } from 'lucide-react';
+import { hero1, ecoleMaradi } from '../assets';
 
 export const AproposPage: React.FC = () => {
   return (
@@ -19,7 +20,7 @@ export const AproposPage: React.FC = () => {
         {/* Overlay Image en arrière-plan */}
         <div className="absolute inset-0 opacity-20">
           <img 
-            src="hero1.png" 
+            src={hero1} 
             alt="Cyclisme fond" 
             className="w-full h-full object-cover"
           />
@@ -179,7 +180,7 @@ export const AproposPage: React.FC = () => {
             <div className="lg:col-span-6">
               <div className="relative rounded-2xl overflow-hidden shadow-xl border border-slate-200 bg-slate-900 group">
                 <img
-                  src="ecole_maradi.png"
+                  src={ecoleMaradi}
                   alt="Délégation et comité de la Fédération Nigérienne de Cyclisme"
                   className="w-full h-80 sm:h-96 object-cover group-hover:scale-105 transition-transform duration-700"
                 />

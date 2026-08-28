@@ -9,6 +9,7 @@ import {
 import type { Article, AccueilProps } from '../types';
 import { articleService } from '../services';
 import { EmptyState } from '../components/EmptyState';
+import { hero } from '../assets';
 
 export const AccueilPage: React.FC<AccueilProps> = ({ onSelectArticle }) => {
   const [articles, setArticles] = useState<Article[]>([]);
@@ -48,7 +49,7 @@ export const AccueilPage: React.FC<AccueilProps> = ({ onSelectArticle }) => {
         {/* Image de fond avec overlay progressif */}
         <div className="absolute inset-0 z-0">
           <img
-            src="hero.png"
+            src={hero}
             alt="Peloton de la Fédération Nigérienne de Cyclisme"
             className="w-full h-full object-cover object-center lg:object-[70%_center]"
           />

@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { niger, iman, logo } from '../assets';
 
 export const Footer = () => {
   return (
@@ -69,13 +70,13 @@ export const Footer = () => {
 
           <div className="flex items-center gap-4 sm:gap-6">
             <div className="h-14 sm:h-16 flex items-center justify-center p-1 text-center">
-              <img src="niger.png" alt="logo" className="h-12 sm:h-14 w-auto object-contain" />
+              <img src={niger} alt="logo niger" className="h-12 sm:h-14 w-auto object-contain" />
             </div>
             <div className="h-14 sm:h-16 flex items-center justify-center p-1 text-center">
-              <img src="iman.png" alt="logo" className="h-12 sm:h-14 w-auto object-contain" />
+              <img src={iman} alt="logo iman" className="h-12 sm:h-14 w-auto object-contain" />
             </div>
             <div className="h-14 sm:h-16 flex items-center justify-center p-1 text-center">
-              <img src="logo.png" alt="logo" className="h-14 sm:h-16 w-auto object-contain" />
+              <img src={logo} alt="logo fnc" className="h-14 sm:h-16 w-auto object-contain" />
             </div>
           </div>
         </div>

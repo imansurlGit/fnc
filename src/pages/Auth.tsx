@@ -9,6 +9,7 @@ import {
   AlertCircle
 } from 'lucide-react';
 import { authService } from '../services';
+import { logo } from '../assets';
 
 export const AuthPage: React.FC = () => {
   const navigate = useNavigate();
@@ -59,7 +60,7 @@ export const AuthPage: React.FC = () => {
         {/* Header Logo & Titre */}
         <div className="flex justify-center mb-6 sm:mb-8">
             <img
-              src="/logo.png"
+              src={logo}
               alt="FNC Logo"
               className="h-22 w-auto object-contain rounded-full"
               onError={(e) => {

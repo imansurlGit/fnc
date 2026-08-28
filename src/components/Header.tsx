@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { NavLink, Link } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
+import { logo } from '../assets';
 
 export const Header: React.FC = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -25,7 +26,7 @@ export const Header: React.FC = () => {
             to="/"
             className="cursor-pointer font-extrabold text-base sm:text-lg tracking-tight text-white flex items-center gap-2 hover:opacity-95 transition"
           >
-            <img src="logo.png" alt="logo" className="h-10 w-auto object-contain rounded-full" />
+            <img src={logo} alt="logo" className="h-10 w-auto object-contain rounded-full" />
           </Link>
 
           {/* Desktop Navigation Links */}
