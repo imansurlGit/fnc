@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+/* Importation des polices depuis Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+@theme {
+  --font-serif: "Cinzel", serif;
+  --font-sans: "Plus Jakarta Sans", sans-serif;
+}
