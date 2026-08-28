@@ -48,7 +48,7 @@ export const AccueilPage: React.FC<AccueilProps> = ({ onSelectArticle }) => {
         {/* Image de fond avec overlay progressif */}
         <div className="absolute inset-0 z-0">
           <img
-            src="/images/hero.png"
+            src="/hero.png"
             alt="Peloton de la Fédération Nigérienne de Cyclisme"
             className="w-full h-full object-cover object-center lg:object-[70%_center]"
           />

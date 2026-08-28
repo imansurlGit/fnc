@@ -129,7 +129,7 @@ export const ActivitesPage: React.FC = () => {
             <div className="lg:col-span-6">
               <div className="relative rounded-2xl overflow-hidden shadow-lg border border-slate-200 bg-slate-900 group">
                 <img 
-                  src="/images/hero.png" 
+                  src="hero.png" 
                   alt="Peloton de compétition en pleine course" 
                   className="w-full h-64 sm:h-80 lg:h-[360px] object-cover group-hover:scale-105 transition-transform duration-700"
                 />
@@ -156,7 +156,7 @@ export const ActivitesPage: React.FC = () => {
             <div className="lg:col-span-6 order-2 lg:order-1">
               <div className="relative rounded-2xl overflow-hidden shadow-lg border border-slate-200 bg-slate-900 group">
                 <img 
-                  src="/images/ecole_maradi.png" 
+                  src="ecole_maradi.png" 
                   alt="École Nationale de Cyclisme de Maradi" 
                   className="w-full h-64 sm:h-80 lg:h-[360px] object-cover group-hover:scale-105 transition-transform duration-700"
                 />
