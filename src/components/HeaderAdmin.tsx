@@ -1,11 +1,7 @@
 import React, { useState } from 'react';
 import {
   Menu,
-  Bell,
   User,
-  CheckCircle2,
-  Sparkles,
-  ShieldCheck,
   ChevronDown
 } from 'lucide-react';
 import type { UserSession } from '../services';
@@ -23,7 +19,6 @@ export const HeaderAdmin: React.FC<HeaderAdminProps> = ({
   user,
   onLogout,
 }) => {
-  const [showNotifs, setShowNotifs] = useState(false);
   const [showUserMenu, setShowUserMenu] = useState(false);
 
   return (
