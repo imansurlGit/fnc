@@ -37,7 +37,7 @@ export const HistoriquePage: React.FC = () => {
       year: '1997 - 1998',
       title: 'Tour International Cycliste du Niger',
       description: 'Premier âge d\'or avec l\'organisation des 3 éditions du Tour International par la FNC, Francis Ducreux et le Ministère. Des étapes mythiques traversant le Sahel (Arlit-Niamey, Zinder-Niamey).',
-      image: '/images/hero.png',
+      image: 'hero.png',
       side: 'left',
       highlightOrange: true,
       cardBgClass: 'bg-sky-50/70',
@@ -66,7 +66,7 @@ export const HistoriquePage: React.FC = () => {
       year: '2017 - 2025',
       title: 'Circuit Africain, AES & Piste Mondiale',
       description: 'Lancement du Tour de la République (550-640 km), participation au Grand Prix ORTM (Alliance des États du Sahel - AES), aux Championnats d\'Afrique sur piste à Abuja et aux Championnats du Monde UCI à Kigali.',
-      image: '/images/ecole_maradi.png',
+      image: 'ecole_maradi.png',
       side: 'right',
       cardBgClass: 'bg-orange-50/80',
       borderClass: 'border-orange-200/90'

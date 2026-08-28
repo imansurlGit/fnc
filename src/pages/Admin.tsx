@@ -97,7 +97,7 @@ export const AdminPage: React.FC = () => {
     category: 'CHAMPIONNAT NATIONAL',
     date: '16 Septembre 2026',
     author: 'Bureau Exécutif FNC',
-    image: '/images/ecole_maradi.png',
+    image: 'ecole_maradi.png',
     summary: '',
     content: '',
   });
@@ -178,7 +178,7 @@ export const AdminPage: React.FC = () => {
       category: 'CHAMPIONNAT NATIONAL',
       date: new Date().toISOString().split('T')[0],
       author: user?.name || 'Bureau Exécutif FNC',
-      image: '/images/hero.png',
+      image: 'hero.png',
       summary: '',
       content: '',
     });

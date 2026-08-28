@@ -2,7 +2,8 @@
  * Configuration globale de l'API Client
  */
 export const API_CONFIG = {
-  BASE_URL: (import.meta.env.VITE_API_URL || '/api').replace(/\/+$/, ''),
+  // BASE_URL: (import.meta.env.VITE_API_URL || '/api').replace(/\/+$/, ''),
+  BASE_URL: "https://dev2iman.pythonanywhere.com/api",
 };
 
 export interface ApiResponse<T> {
