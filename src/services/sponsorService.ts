@@ -1,5 +1,5 @@
 import type { Sponsor, SponsoringRequest } from '../types';
-import { apiFetch } from './apiClient';
+import { apiFetch, API_CONFIG } from './apiClient';
 
 export interface BackendSponsor {
   id: number;
@@ -27,6 +27,7 @@ function mapBackendSponsor(item: BackendSponsor): Sponsor {
     if (!photoUrl.startsWith('/')) {
       photoUrl = `/media/${photoUrl}`;
     }
+    photoUrl = `${API_CONFIG.MEDIA_URL}${photoUrl}`;
   }
 
   return {

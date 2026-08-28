@@ -63,7 +63,7 @@ export function App() {
   const [selectedArticle, setSelectedArticle] = useState<Article | null>(null);
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/fnc">
       <PublicLayout
         onSelectArticle={(art) => setSelectedArticle(art)}
         selectedArticle={selectedArticle}

@@ -1,5 +1,5 @@
 import type { Article } from '../types';
-import { apiFetch } from './apiClient';
+import { apiFetch, API_CONFIG } from './apiClient';
 
 export interface BackendArticle {
   id: number;
@@ -20,6 +20,7 @@ export function mapBackendArticle(item: BackendArticle): Article {
     if (!photoUrl.startsWith('/')) {
       photoUrl = `/media/${photoUrl}`;
     }
+    photoUrl = `${API_CONFIG.MEDIA_URL}${photoUrl}`;
   }
 
   const contentStr = item.contenue || '';
