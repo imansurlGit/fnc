@@ -86,18 +86,18 @@ export const AccueilPage: React.FC<AccueilProps> = ({ onSelectArticle }) => {
               
               <div className="inline-flex gap-2.5 sm:gap-3 bg-slate-900/60 backdrop-blur-md p-2 rounded-2xl border border-white/10 shadow-xl">
                 <div className="bg-white/5 border border-white/5 rounded-xl px-3.5 sm:px-4 py-1.5 sm:py-2 text-center min-w-[65px] sm:min-w-[70px]">
-                  <span className="block text-xl sm:text-2xl font-black text-amber-400 leading-none">16</span>
-                  <span className="text-[8px] sm:text-[9px] uppercase font-semibold text-slate-400 tracking-widest">Jour</span>
+                  <span className="block text-xl sm:text-2xl font-black text-amber-400 leading-none">23</span>
+                  {/* <span className="text-[8px] sm:text-[9px] uppercase font-semibold text-slate-400 tracking-widest">Jour</span> */}
                 </div>
 
                 <div className="bg-white/5 border border-white/5 rounded-xl px-3.5 sm:px-4 py-1.5 sm:py-2 text-center min-w-[65px] sm:min-w-[70px]">
-                  <span className="block text-base sm:text-lg font-black text-white leading-none uppercase mt-0.5">Sept.</span>
-                  <span className="text-[8px] sm:text-[9px] uppercase font-semibold text-slate-400 tracking-widest">Mois</span>
+                  <span className="block text-base sm:text-lg font-black text-white leading-none uppercase mt-0.5">Sept</span>
+                  {/* <span className="text-[8px] sm:text-[9px] uppercase font-semibold text-slate-400 tracking-widest">Mois</span> */}
                 </div>
 
                 <div className="bg-white/5 border border-white/5 rounded-xl px-3.5 sm:px-4 py-1.5 sm:py-2 text-center min-w-[65px] sm:min-w-[70px]">
                   <span className="block text-base sm:text-lg font-black text-[#30A836] leading-none mt-0.5">2026</span>
-                  <span className="text-[8px] sm:text-[9px] uppercase font-semibold text-slate-400 tracking-widest">Année</span>
+                  {/* <span className="text-[8px] sm:text-[9px] uppercase font-semibold text-slate-400 tracking-widest">Année</span> */}
                 </div>
               </div>
             </div>
